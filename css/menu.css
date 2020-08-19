@@ -73,6 +73,8 @@
 }
 
 /* Animação de Rodar quando ativado */
+
+/*
 .menu-wrap .toggler:checked:hover + .hamburger > div:before{
     width: 80%;
     height: 1.5px;
@@ -83,6 +85,7 @@
     height: 1.5px;
     translate: -15px, 5px;
 }
+*/
 
 /* Mostrar o menu */
 .menu-wrap .toggler:checked ~ .menu {
@@ -120,7 +123,7 @@
     align-items: center;
     justify-content: center;
     transform: translateX(-100vw);
-    transition: all 0.8s ease;    
+    transition: all 0.5s ease-in-out;
 }
 
 .menu-wrap .menu > div > div {
@@ -128,23 +131,31 @@
     max-width: 90vw;
     max-height: 100vh;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: all 5s ;
+}
+
+.menu-wrap .menu > div > div > img {
+    width: 100px;
+    height: 100px;
+    transform: translateY(-10vw);
 }
 
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: #fff;
+    color: rgba(255 ,255 ,255 ,0.5);
     font-size: 1.5rem;
     padding: 1rem;
+    transform: translateY(-2.5vw);
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.5s ease;
+    transition: all 0.4s ease;
 }
 
-.menu-wrap .menu > div > div > ul > li > a:hover {
+.menu-wrap .menu > div > div > ul > li > a:hover {    
     font-size: 1.7rem;
-    opacity: 0.5;
+    color: rgba(255 ,255 ,255 ,1) ;
+    transition: all 0.4s ease;
 }
